@@ -64,7 +64,7 @@ A custom HTML class to add to each overlay element.
 
 #### `content`
 
-__Type:__ `String`, `Element`, `DocumentFragment`
+__Type:__ `String`, `Element`, `DocumentFragment`, `React Element`
 __Default:__ `"This overlay will show up while the video is playing"`
 
 _This setting can be overridden by being set on individual overlay objects._

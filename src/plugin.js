@@ -107,6 +107,8 @@ class Overlay extends Component {
       el.innerHTML = content;
     } else if (content instanceof window.DocumentFragment) {
       el.appendChild(content);
+    } else if (React.isValidElement(content)) {
+      ReactDOM.render(content, el);
     } else {
       videojs.appendContent(el, content);
     }
